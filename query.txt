@@ -1,0 +1,62 @@
+#Creating Task
+mutation {
+  createTask (input:{
+    title: "Dance"
+    description: "Party At home"
+    date:"2020-02-10"
+  }
+  ) {
+    tsk{
+      id
+      user
+      title
+      date
+      description
+    }
+  }
+}
+
+
+#Get All Tasks
+query{
+  getTask{
+    edges{
+      node{
+        id
+        title
+        date
+        description
+      }
+    }
+  }
+}
+
+
+#Update Task
+
+mutation{
+  updateTask (input:{
+    id:"VGFza1R5cGU6OA=="
+    title:"This is updated Data"
+    description: "Updated"
+    date: "2020-04-10"
+  }){
+    tsk{
+      id,
+      user,
+      title,
+      description
+      date
+    }
+  }
+}
+
+
+#Delete Task
+mutation{
+  deleteTask (input:{
+    id: "VGFza1R5cGU6OA=="
+  }) {
+    clientMutationId
+  }
+}
