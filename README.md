@@ -1,4 +1,4 @@
-# Django_Signup_Login
+# Django_Graphene
 
 ## Running the Project Locally
 
@@ -10,13 +10,13 @@ git clone https://github.com/samir321-pixel/Django_Graphene.git
 
 
 
-Apply the migrations:
+## Apply the migrations:
 
 ```bash
 python manage.py migrate
 ```
 
-Finally, run the development server:
+## Finally, run the development server:
 
 ```bash
 python manage.py runserver
